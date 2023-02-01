@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frmgenre"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#efefef"
+    android:layout_marginRight="@dimen/size10">
+
+    <TextView
+        android:id="@+id/tv_genrename"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/size46"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:text="All genre"
+        android:textColor="#222222"
+        android:textSize="@dimen/size15" />
+</FrameLayout>

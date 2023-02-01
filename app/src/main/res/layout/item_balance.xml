@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size62"
+        android:layout_marginTop="@dimen/size10"
+        android:background="#ffffff">
+        <TextView
+            android:id="@+id/tv_No"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/size10"
+            android:text="0"
+            android:textSize="@dimen/size14"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/size30">
+
+            <TextView
+                android:id="@+id/tv_mvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#222222"
+                android:maxLines="1"
+                android:textSize="@dimen/size14"
+                android:text="N/A"/>
+
+            <TextView
+                android:id="@+id/tv_voucher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="2000-****-****-2153"
+                android:textColor="@color/green"
+                android:textSize="@dimen/size11"
+                android:layout_marginRight="@dimen/size15"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/size30"
+            android:layout_marginTop="@dimen/size15">
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:textColor="#a6a6a6"
+                android:textSize="@dimen/size11"
+                android:text="N/a"/>
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="N/A"
+                android:textColor="@color/green"
+                android:textSize="@dimen/size11"
+                android:layout_marginRight="@dimen/size15"/>
+        </FrameLayout>
+    </FrameLayout>
+</LinearLayout>

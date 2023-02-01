@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fcfcfc"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/main_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size46"
+        android:background="#ffffff">
+
+        <FrameLayout
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/size20"
+            android:paddingRight="@dimen/size20"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/back_black"
+                android:scaleType="fitXY" />
+        </FrameLayout>
+
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#222222"
+            android:textSize="@dimen/size17" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_mainaccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size10"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_surname"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/size16"
+            android:layout_marginRight="@dimen/size16"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size2"
+                android:textSize="@dimen/size14"
+                android:text="SurName: "/>
+
+            <EditText
+                android:id="@+id/ac_surname"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size48"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="@dimen/size10"
+                android:text="aaa"
+                android:textColor="#222222"
+                android:textSize="@dimen/size14"
+                android:focusable="true"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size2"
+                android:textSize="@dimen/size14"
+                android:text="Begin with a character, limit 2-16 characters"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/size16"
+            android:layout_marginRight="@dimen/size16"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size2"
+                android:textSize="@dimen/size14"
+                android:text="Name: "/>
+
+            <EditText
+                android:id="@+id/ac_name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size48"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="@dimen/size10"
+                android:text="aaa"
+                android:textColor="#222222"
+                android:textSize="@dimen/size14"
+                android:focusable="true"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size2"
+                android:textSize="@dimen/size14"
+            android:text="Begin with a character, limit 4-16 characters"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_gender"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/size16"
+            android:layout_marginRight="@dimen/size16"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size2"
+                android:textSize="@dimen/size14"
+                android:text="Gender: "/>
+
+            <RadioGroup
+                android:id="@+id/ac_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    android:layout_marginLeft="@dimen/size30"/>
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size16"
+        android:layout_marginRight="@dimen/size16"
+        android:layout_marginTop="@dimen/size5">
+
+        <Button
+            android:id="@+id/btn_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:shadowColor="@color/transparent"
+            android:background="@drawable/btn_shape"
+            android:text="Update"
+            style="?android:attr/borderlessButtonStyle"/>
+    </LinearLayout>
+
+</LinearLayout>

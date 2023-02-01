@@ -1,0 +1,4 @@
+# Project exclude paths
+/.gradle/
+/countrypicker/build/
+/countrypicker/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/

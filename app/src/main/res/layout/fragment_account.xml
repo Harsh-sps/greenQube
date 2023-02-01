@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_mainaccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_e8"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/frm_profile"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size62"
+                android:background="#ffffff">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/size50"
+                        android:layout_height="@dimen/size50"
+                        android:layout_marginLeft="@dimen/size15"
+                        android:background="@drawable/ic_account" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_username"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/size15"
+                            android:paddingTop="@dimen/size10"
+                            android:textSize="@dimen/size20"
+                            android:text="New User"/>
+
+                        <TextView
+                            android:id="@+id/tv_userid"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/size15"
+                            android:textSize="@dimen/size15"
+                            android:text="Acct No: 000012124"
+                            android:textStyle="bold"
+                            android:visibility="gone"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="@dimen/size10"
+                    android:background="@drawable/more_grey" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frm_favmovie"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size48"
+                android:layout_marginTop="@dimen/size1"
+                android:background="#ffffff">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/size15"
+                        android:background="@drawable/fav" />
+
+                    <TextView
+                        android:id="@+id/tv_favoritemovie"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/size18"
+                        android:text="@string/favoritemovie"
+                        android:textSize="@dimen/size14" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="@dimen/size10"
+                    android:background="@drawable/more_grey" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frm_balance"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size48"
+                android:layout_marginTop="@dimen/size10"
+                android:background="#ffffff">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/size15"
+                        android:background="@drawable/ic_balance" />
+
+                    <TextView
+                        android:id="@+id/tv_accountbaclance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/size18"
+                        android:text="@string/accountbalance"
+                        android:textSize="@dimen/size14" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="@dimen/size14"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/size14"
+                    android:text="$0"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frm_recharge"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size48"
+                android:layout_marginTop="@dimen/size1"
+                android:background="#ffffff">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/size15"
+                        android:background="@drawable/ic_recharge" />
+
+                    <TextView
+                        android:id="@+id/tv_recharge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/size18"
+                        android:text="@string/accountrecharge"
+                        android:textSize="@dimen/size14" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="@dimen/size10"
+                    android:background="@drawable/more_grey" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frm_plan"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size48"
+                android:layout_marginTop="@dimen/size1"
+                android:background="#ffffff"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/size15"
+                        android:background="@drawable/ic_plan" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/size18"
+                        android:text="@string/planname"
+                        android:textSize="@dimen/size14" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_planname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="@dimen/size14"
+                    android:text="N/A" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="@dimen/size10"
+                    android:background="@drawable/more_grey"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frm_planprice"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size48"
+                android:layout_marginTop="@dimen/size1"
+                android:background="#ffffff"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/size15"
+                        android:background="@drawable/ic_planprice" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/size18"
+                        android:text="@string/planprice"
+                        android:textSize="@dimen/size14" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_planprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="@dimen/size14"
+                    android:text="N/A" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="@dimen/size10"
+                    android:background="@drawable/more_grey"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frm_expirydate"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size48"
+                android:layout_marginTop="@dimen/size1"
+                android:background="#ffffff"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/size15"
+                        android:background="@drawable/ic_billingdate" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/size18"
+                        android:text="@string/account_expire_time"
+                        android:textSize="@dimen/size14" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_expirydate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="@dimen/size14"
+                    android:text="N/A" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="@dimen/size10"
+                    android:background="@drawable/more_grey"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frm_download_credits"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size48"
+                android:layout_marginTop="@dimen/size1"
+                android:background="#ffffff">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/size15"
+                        android:background="@drawable/ic_history" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/size18"
+                        android:text="@string/available_download_credits"
+                        android:textSize="@dimen/size14" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_download_credits"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="@dimen/size14"
+                    android:text="N/A" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="@dimen/size10"
+                    android:background="@drawable/more_grey"
+                    android:visibility="gone"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frm_purchasehistory"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size48"
+                android:layout_marginTop="@dimen/size1"
+                android:background="#ffffff">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/size15"
+                        android:background="@drawable/ic_history" />
+
+                    <TextView
+                        android:id="@+id/tv_purchasehistory"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/size18"
+                        android:text="@string/purchasehistory"
+                        android:textSize="@dimen/size14" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="@dimen/size10"
+                    android:background="@drawable/more_grey" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frm_about"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size48"
+                android:layout_marginTop="@dimen/size10"
+                android:background="#ffffff">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/size15"
+                        android:background="@drawable/ic_support" />
+
+                    <TextView
+                        android:id="@+id/tv_aboutogle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/size18"
+                        android:text="@string/supportinfo"
+                        android:textSize="@dimen/size14" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="@dimen/size14"
+                    android:text="v1.1.1"
+                    android:textSize="@dimen/size14"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="@dimen/size10"
+                    android:background="@drawable/more_grey"
+                    android:visibility="visible" />
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

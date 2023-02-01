@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "32428709633",
+    "firebase_url": "https://ogle-fcm.firebaseio.com",
+    "project_id": "ogle-fcm",
+    "storage_bucket": "ogle-fcm.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:32428709633:android:b392e0d966d6be89",
+        "android_client_info": {
+          "package_name": "com.aistream.greenqube"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "32428709633-p8nq2kmrnq5r8reoed3d7e1tuhg15akp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8QL75VpDrjTrzlaKxZqLv0kK84tHsw_k"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

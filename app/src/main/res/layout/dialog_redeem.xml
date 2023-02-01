@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fcfcfc"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/main_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size46"
+        android:background="#ffffff">
+
+        <FrameLayout
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/size20"
+            android:paddingRight="@dimen/size20"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/back_black"
+                android:scaleType="fitXY" />
+        </FrameLayout>
+
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Renew VIP Plan"
+            android:textColor="#222222"
+            android:textSize="@dimen/size17" />
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/ll_mainaccount"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/size10"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/frm_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size18"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Account Balance: "
+                            android:textColor="#8a8a8a"
+                            android:textSize="@dimen/size14" />
+
+                        <TextView
+                            android:id="@+id/tv_balance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textColor="@color/lightgreen"
+                            android:textSize="@dimen/size14" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/size10"
+                        android:orientation="vertical"
+                        android:background="#ffffff">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="VIP Plan"
+                            android:textColor="#8a8a8a"
+                            android:textSize="@dimen/size14" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/size30"
+                            android:layout_marginTop="@dimen/size10"
+                            android:layout_marginBottom="@dimen/size10"
+                            android:weightSum="4">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/bg_border_active"
+                                android:layout_weight="1">
+
+                                <TextView
+                                    android:id="@+id/tv_plan_price"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:gravity="center"
+                                    android:text="22 /month"/>
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/size10"
+                        android:background="#ffffff"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Payment"/>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/size5"
+                            android:layout_marginLeft="@dimen/size18">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Voucher Code"
+                                android:layout_gravity="center_vertical"
+                                android:textColor="@color/green"/>
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_marginRight="@dimen/size10"
+                                android:checked="true"/>
+
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/frm_mobinum"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/size170"
+                        android:background="#ffffff"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/size10"
+                            android:text="@string/redeem"
+                            android:textColor="#8a8a8a"
+                            android:textSize="@dimen/size14" />
+
+                        <EditText
+                            android:id="@+id/et_redeemcode"
+                            android:layout_width="match_parent"
+                            android:layout_marginLeft="@dimen/size18"
+                            android:layout_marginRight="@dimen/size18"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="@dimen/size20"
+                            android:hint="Enter Voucher code"
+                            android:digits="1234567890"
+                            android:textColorHint="#c5c4c4"
+                            android:textSize="@dimen/size15" />
+
+                        <Button
+                            android:id="@+id/btn_redeem"
+                            android:layout_width="@dimen/size269"
+                            android:layout_height="@dimen/size43"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/size21"
+                            android:background="@drawable/bg_btn_login1"
+                            android:stateListAnimator="@null"
+                            android:text="Renew"
+                            android:textAllCaps="false"
+                            android:textColor="#ffffff"
+                            android:textSize="@dimen/size14"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </FrameLayout>
+    </ScrollView>
+</LinearLayout>

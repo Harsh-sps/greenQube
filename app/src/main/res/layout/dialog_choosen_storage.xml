@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dialog"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size40"
+        android:gravity="center"
+        android:text="Choose path save file"
+        android:textColor="#3999e4" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size2"
+        android:background="@drawable/bg_btn_no_press"/>
+
+    <ListView
+        android:id="@+id/lv_storage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/bg_btn_yes_dialog_def"
+        android:dividerHeight="@dimen/size1"/>
+
+
+</LinearLayout>

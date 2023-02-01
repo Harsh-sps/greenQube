@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/size10">
+
+    <LinearLayout
+        android:id="@+id/ll_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_movie_preview"
+                android:layout_width="@dimen/size100"
+                android:layout_height="@dimen/size140"
+                android:background="@drawable/preview_1"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/tv_vip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/size4"
+                android:paddingRight="@dimen/size4"
+                android:paddingTop="@dimen/size1"
+                android:paddingBottom="@dimen/size1"
+                android:background="@color/gold"
+                android:layout_gravity="right"
+                android:layout_marginRight="@dimen/size6"
+                android:textColor="#ffffff"
+                android:text="VIP"
+                android:textSize="@dimen/size9"
+                android:visibility="gone"/>
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/size9"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_name_movie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textColor="#222222"
+                android:textSize="@dimen/size14"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_filesize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size5"
+                android:text="HD 720P | 300MB"
+                android:textColor="#7f7f7f"
+                android:textSize="@dimen/size13" />
+
+            <TextView
+                android:id="@+id/txt_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size5"
+                android:text="Expires on 04-28"
+                android:textColor="#7f7f7f"
+                android:textSize="@dimen/size13" />
+
+            <TextView
+                android:id="@+id/txt_repleasedate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size5"
+                android:text="Expires on 04-28"
+                android:textColor="#7f7f7f"
+                android:textSize="@dimen/size13" />
+
+            <TextView
+                android:id="@+id/txt_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size5"
+                android:text="Expires on 04-28"
+                android:textColor="@color/green"
+                android:textSize="@dimen/size13"/>
+
+            <Button
+                android:id="@+id/btn_download"
+                android:layout_width="@dimen/size87"
+                android:layout_height="@dimen/size29"
+                android:layout_marginTop="@dimen/size5"
+                android:background="@drawable/bg_btn_download"
+                android:text="Download"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/size14"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size1"
+        android:layout_marginTop="@dimen/size14"
+        android:background="#33000000" />
+</LinearLayout>

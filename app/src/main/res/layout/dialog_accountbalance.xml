@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+    <FrameLayout
+        android:id="@+id/main_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size46"
+        android:background="@color/color_e8">
+
+        <FrameLayout
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/size20"
+            android:paddingRight="@dimen/size20"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/back_black"
+                android:scaleType="fitXY" />
+        </FrameLayout>
+
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Top Up Balance"
+            android:textColor="#222222"
+            android:textSize="@dimen/size17" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size46">
+
+        <LinearLayout
+            android:id="@+id/ll_mainaccount"
+            android:layout_width="@dimen/size300"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/size10"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/frm_about"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/size10"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/splash_logo"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_balance"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/size30"
+                android:textSize="@dimen/size17"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/et_redeemcode"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size43"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/bg_btn_login1"
+                    android:layout_marginTop="@dimen/size30"
+                    android:digits="1234567890"
+                    android:maxLength="19"
+                    android:clickable="false"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:hint="Enter Top Up Code to proceed"
+                    android:textSize="@dimen/size17" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+    <com.aistream.greenqube.customs.KeyBoardLayout
+        android:id="@+id/keyboard_recharge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="?attr/view_bg" />
+</RelativeLayout>

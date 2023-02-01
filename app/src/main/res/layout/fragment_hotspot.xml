@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:id="@+id/ll_city"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size34"
+            android:layout_marginLeft="@dimen/size15"
+            android:layout_marginRight="@dimen/size18"
+            android:layout_marginTop="@dimen/size5"
+            android:background="@drawable/green_horizontal_gradient"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/size11"
+                android:background="@drawable/icsearch" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/size44"
+                android:background="@android:color/transparent"
+                android:fontFamily="sans-serif"
+                android:gravity="center_vertical"
+                android:hint="Please Input City Name"
+                android:letterSpacing="-0.01"
+                android:textColor="#157031"
+                android:textColorHint="#157031"
+                android:textSize="@dimen/size15"
+                android:textStyle="normal" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/size15"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size41"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/size15"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center"
+                        android:letterSpacing="-0.01"
+                        android:text="Locating City"
+                        android:textColor="#696969"
+                        android:textSize="@dimen/size15"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/size10"
+                        android:background="#e9e9e9"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center"
+                        android:letterSpacing="-0.01"
+                        android:text="Ho Chi Minh"
+                        android:textColor="#313131"
+                        android:textSize="@dimen/size15"
+                        android:textStyle="normal" />
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/lv_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@android:color/transparent"></ListView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/side_index"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"></LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyc_hotspot"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/size55"
+        android:paddingBottom="@dimen/size7"
+        android:visibility="visible" />
+</FrameLayout>

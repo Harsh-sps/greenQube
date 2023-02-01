@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fcfcfc"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_showALlMovie"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size42"
+            android:background="#ffffff">
+
+            <ImageView
+                android:id="@+id/im_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/size14"
+                android:background="@drawable/back_black"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/title_toolbar"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="All Movie"
+                android:textColor="#222222"
+                android:textSize="@dimen/size17" />
+
+            <FrameLayout
+                android:layout_width="@dimen/size52"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:background="#ffffff">
+
+                <ImageView
+                    android:id="@+id/ic_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/searchnew" />
+            </FrameLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frm_Genre"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size46"
+            android:layout_marginLeft="@dimen/size3"
+            android:layout_marginRight="@dimen/size3"
+            android:visibility="gone">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/re_genre"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </FrameLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/re_movie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size10"
+            android:layout_marginRight="@dimen/size10"
+            android:layout_marginTop="@dimen/size5"
+            android:layout_marginBottom="@dimen/size10"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_searchMov"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size14"
+                android:layout_marginRight="@dimen/size65"
+                android:background="@drawable/bg_search"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/size8"
+                    android:background="@drawable/ic_search_grey" />
+
+                <EditText
+                    android:id="@+id/et_search"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/size48"
+                    android:layout_marginLeft="@dimen/size6"
+                    android:background="@android:color/transparent"
+                    android:hint="Enter name to search"
+                    android:imeOptions="actionSearch"
+                    android:inputType="text"
+                    android:letterSpacing="0.05"
+                    android:textColor="#171313"
+                    android:textColorHint="#30000000"
+                    android:textSize="@dimen/size14" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginLeft="@dimen/size8"
+                android:layout_marginRight="@dimen/size13"
+                android:text="@string/cancel"
+                android:textColor="@color/green"
+                android:textSize="@dimen/size13" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/size11"
+            android:text="Found 0 results"
+            android:textColor="#777777"
+            android:textSize="@dimen/size11"
+            android:visibility="gone" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyc_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/size30"
+            android:visibility="visible"/>
+
+    </LinearLayout>
+</LinearLayout>

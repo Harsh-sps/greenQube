@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.aistream.greenqube.activity.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_connnotification"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size25"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/size13"
+            android:visibility="gone"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:id="@+id/main_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size44"
+                android:background="@color/color_e8">
+
+                <FrameLayout
+                    android:id="@+id/btn_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="@dimen/size20"
+                    android:paddingRight="@dimen/size20"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/icbackarrow"
+                        android:scaleType="fitXY" />
+                </FrameLayout>
+
+                <ImageView
+                    android:layout_width="@dimen/size67"
+                    android:layout_height="@dimen/size23"
+                    android:layout_marginLeft="@dimen/size10"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/ogle_icon"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:id="@+id/iv_edit"
+                    android:layout_width="@dimen/size25"
+                    android:layout_height="@dimen/size25"
+                    android:src="@drawable/suggestion"
+                    android:layout_gravity="right |center"
+                    android:layout_marginRight="@dimen/size10"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/toolbar_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/main_title_library"
+                    android:textColor="@color/color222"
+                    android:textSize="@dimen/size17" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/operate_bar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size44"
+                android:layout_gravity="top"
+                android:background="@color/blueindicator"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingRight="@dimen/size50">
+
+                    <ImageView
+                        android:id="@+id/iv_cancel"
+                        android:layout_width="@dimen/size25"
+                        android:layout_height="@dimen/size25"
+                        android:src="@drawable/cancel"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/size10"/>
+
+                    <TextView
+                        android:id="@+id/tv_delmsg"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/delete_notice"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/size13"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/iv_delete"
+                    android:layout_width="@dimen/size25"
+                    android:layout_height="@dimen/size25"
+                    android:src="@drawable/delete"
+                    android:layout_gravity="right |center"
+                    android:layout_marginRight="@dimen/size10"
+                    android:visibility="gone"/>
+
+            </FrameLayout>
+        </RelativeLayout>
+
+        <com.aistream.greenqube.customs.CustomViewPager
+            android:id="@+id/main_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/ll_notification"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size50"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/size55"
+        android:background="@color/colorPrimaryDark"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/size12"
+            android:text="@string/connectap"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/size14" />
+
+        <TextView
+            android:id="@+id/txt_download"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="@dimen/size35"
+            android:text="0/0"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/size14" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="@dimen/size12"
+            android:background="@drawable/right_arrow_white" />
+
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_tabbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/main_tab"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size45"
+            android:layout_gravity="bottom"
+            android:background="#f8f8f8"
+            app:tabGravity="center"
+            app:tabIndicatorHeight="0dp"
+            app:tabMinWidth="@dimen/size90"
+            app:tabMode="fixed"
+            app:tabBackground="@color/transparent"/>
+    </LinearLayout>
+</FrameLayout>

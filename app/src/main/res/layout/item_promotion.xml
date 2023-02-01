@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size202">
+
+        <ImageView
+            android:id="@+id/im_promotion"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/preview_2"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/tv_vip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/size4"
+            android:paddingRight="@dimen/size4"
+            android:paddingTop="@dimen/size1"
+            android:paddingBottom="@dimen/size1"
+            android:background="@color/gold"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/size6"
+            android:textColor="#ffffff"
+            android:text="VIP"
+            android:textSize="@dimen/size9"
+            android:visibility="gone"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/size25"
+                android:layout_marginLeft="@dimen/size20"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="All Quiet on the Westen Front (1930)"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/size14" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

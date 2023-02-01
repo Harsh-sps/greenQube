@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <FrameLayout
+        android:id="@+id/frm_SeeAll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size40">
+
+        <TextView
+            android:id="@+id/tv_genname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="@dimen/size15"
+            android:ellipsize="end"
+            android:lineSpacingExtra="@dimen/size2"
+            android:maxLines="1"
+            android:text="@string/allgen"
+            android:textColor="#000000"
+            android:textSize="@dimen/size16"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_showall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            android:layout_marginRight="@dimen/size14"
+            android:text="See All >"
+            android:textColor="#000000" />
+    </FrameLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rcy_movie_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

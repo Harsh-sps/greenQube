@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_main_library"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_frmMov"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.CoordinatorLayout
+            android:id="@+id/corrdinar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/appBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:contentScrim="?attr/colorPrimary"
+                    app:layout_scrollFlags="scroll|enterAlwaysCollapsed">
+
+                    <LinearLayout
+                        android:id="@+id/ll_hotmovie"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/size35">
+
+                            <TextView
+                                android:id="@+id/tv_genrehotmovie"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="@dimen/size10"
+                                android:gravity="center"
+                                android:text="@string/continuewatching"
+                                android:textColor="#000000"
+                                android:textSize="@dimen/size14" />
+
+                            <TextView
+                                android:id="@+id/tv_seeallhotmovie"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right|center"
+                                android:layout_marginRight="@dimen/size17"
+                                android:background="@drawable/more"
+                                android:gravity="center"
+                                android:textColor="#000000"
+                                android:textSize="@dimen/size12" />
+                        </FrameLayout>
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/re_hotmovie"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/size10"
+                            android:layout_marginRight="@dimen/size10" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_allgenre"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/size40"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:id="@+id/tv_genreallgenre"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="@dimen/size15"
+                                android:gravity="center"
+                                android:text="@string/allgen"
+                                android:textColor="#000000"
+                                android:textSize="@dimen/size14" />
+
+                            <TextView
+                                android:id="@+id/tv_seeallallgenre"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="right"
+                                android:layout_marginRight="@dimen/size17"
+                                android:gravity="center"
+                                android:text="@string/seeall"
+                                android:textColor="#000000"
+                                android:textSize="@dimen/size12" />
+                        </FrameLayout>
+
+                        <TextView
+                            android:id="@+id/tv_nomovieallgenre"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="No Movie"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/size14"
+                            android:visibility="gone" />
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.design.widget.AppBarLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_framebody"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/re_allmovie"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size10"
+                    android:layout_marginRight="@dimen/size10"
+                    android:layout_marginBottom="@dimen/size50" />
+            </LinearLayout>
+        </android.support.design.widget.CoordinatorLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frm_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+</LinearLayout>
